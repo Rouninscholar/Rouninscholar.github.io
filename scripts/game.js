@@ -470,8 +470,8 @@ function load(){
 		upgrade.multiverseMultiPrice = saveGame.multiverseMultiPrice;
 	}	
 }
-
-//load();
+Reset();
+load();
 
 var autoSave = setInterval(function(){
 	save();

@@ -315,7 +315,7 @@ function save(){
 function load(){
 	var saveGame = JSON.parse(localStorage.getItem("save")); 
 
-	if (typeof saveGame.second !== "undefined"){
+	if (typeof saveGame.second !== "undefined" || saveGame.second == NULL ){
 		gameTimeData.second = saveGame.second;
 	}
 	if (typeof saveGame.minute !== "undefined"){
